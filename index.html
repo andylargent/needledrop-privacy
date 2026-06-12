@@ -30,7 +30,7 @@
 </head>
 <body>
   <h1>Needle Dropper — Privacy Policy</h1>
-  <p class="updated">Last updated: June 8, 2026</p>
+  <p class="updated">Last updated: June 12, 2026</p>
 
   <p>
     Needle Dropper (“the app”) helps you browse and manage your personal
@@ -62,14 +62,43 @@
       <strong>Motion.</strong> If you enable “shake to pick,” motion data is used
       on-device to detect a shake gesture. It is never stored or transmitted.
     </li>
+    <li>
+      <strong>Apple Music library and listening history (optional).</strong> If you
+      grant permission, the app reads your Apple Music listening history (recently
+      played tracks), library play counts, and recently added songs via Apple's
+      MusicKit framework. Only artist names and genre tags are extracted from this
+      data to build an on-device taste profile. The profile is used solely to rank
+      and filter your vinyl collection recommendations. No raw listening data, track
+      titles, or Apple Music identifiers leave your device; nothing is sent to us or
+      any third party. You can revoke this permission at any time in iOS Settings →
+      Privacy &amp; Security → Media &amp; Apple Music.
+    </li>
+    <li>
+      <strong>Spotify listening history (optional).</strong> If you choose to connect
+      your Spotify account, the app uses Spotify's official OAuth sign-in and requests
+      read-only access to your recently played tracks and top artists. We never see or
+      store your Spotify password. The Spotify access token is stored securely in the
+      iOS Keychain and is used only to fetch listening history on your behalf. As with
+      Apple Music, the app extracts artist names and genre signals to build an
+      on-device taste profile for ranking recommendations. Your listening history is
+      not sent to us or any third party beyond Spotify. You can disconnect Spotify at
+      any time in the app's Settings screen, which removes the stored token and clears
+      any derived profile data.
+    </li>
   </ul>
 
   <h2>How information is used</h2>
   <p>
     Accessed information is used only to provide the app’s features: showing your
-    collection, looking up records, and suggesting something to play. The app
-    communicates with Discogs’ servers (<code>api.discogs.com</code> and
-    <code>i.discogs.com</code>) to retrieve your collection and album artwork.
+    collection, looking up records, and suggesting something to play. If you
+    optionally connect Apple Music or Spotify, the derived taste profile is used
+    to rank recommendations from your vinyl collection — for example, surfacing
+    records whose artists or genres match what you’ve been listening to lately.
+    The app communicates with Discogs’ servers (<code>api.discogs.com</code> and
+    <code>i.discogs.com</code>) to retrieve your collection and album artwork, and
+    optionally with Spotify’s API (<code>api.spotify.com</code>) if you connect
+    that service. Apple Music data is accessed entirely on-device via MusicKit and
+    involves no outbound network calls from the app.
   </p>
 
   <h2>What we don’t do</h2>
@@ -91,8 +120,12 @@
   <p>
     All app data lives on your device. You can remove it at any time by
     disconnecting your Discogs account in Settings (which clears the cached
-    collection and the stored token) or by deleting the app, which removes all
-    associated data.
+    collection and the stored token), or by deleting the app, which removes all
+    associated data. Taste profile data derived from Apple Music or Spotify is
+    likewise stored only on-device and is deleted when you disconnect the
+    respective service or delete the app. Apple Music permission can also be
+    revoked independently in iOS Settings → Privacy &amp; Security → Media &amp;
+    Apple Music.
   </p>
 
   <h2>Third-party services</h2>
@@ -100,6 +133,16 @@
     The app relies on Discogs to provide collection and catalog data. Your use of
     Discogs is governed by Discogs’
     <a href="https://www.discogs.com/forum/topic/278">privacy policy</a>.
+  </p>
+  <p>
+    If you optionally connect Apple Music, your use of that service is governed by
+    Apple’s <a href="https://www.apple.com/legal/privacy/">privacy policy</a> and
+    the MusicKit terms. If you optionally connect Spotify, your use of that service
+    is governed by Spotify’s
+    <a href="https://www.spotify.com/legal/privacy-policy/">privacy policy</a>.
+    The app requests only the minimum Spotify scopes needed (recently played and
+    top artists, read-only) and never requests permission to modify your Spotify
+    library or control playback.
   </p>
 
   <h2>Children’s privacy</h2>
